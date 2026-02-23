@@ -1,0 +1,12 @@
+# Godot 4+ specific ignores
+.godot/
+
+# Imported translations (automatically generated from CSV files)
+*.translation
+
+#Android build ignore
+android/build/*
+!android/build/AndroidManifest.xml
+
+Export/
+!Export/.gdignore

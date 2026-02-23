@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://5fyvqbaa6u75"]
+
+[ext_resource type="Script" uid="uid://jpt6yhi6llsh" path="res://main.gd" id="1_ig7tw"]
+
+[node name="Main" type="Control" unique_id=1181107481 node_paths=PackedStringArray("entry")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ig7tw")
+entry = NodePath("CenterContainer/VBoxContainer/HBoxContainer/Entry")
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=519735806]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=1146355733]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1288435768]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Please write something below!"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer" unique_id=1301263616]
+layout_mode = 2
+
+[node name="Entry" type="LineEdit" parent="CenterContainer/VBoxContainer/HBoxContainer" unique_id=1538507785]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer" unique_id=1907531288]
+layout_mode = 2
+text = "Send!"
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/HBoxContainer/Button" to="." method="_on_button_pressed"]
