@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://bdb670tubnk3c" path="res://pages/settings.gd" id="1_1ofq1"]
 [ext_resource type="PackedScene" uid="uid://dlcjr2rnx4o1a" path="res://components/settings/volume_bar.tscn" id="2_q5qkr"]
 [ext_resource type="PackedScene" uid="uid://xgoixmpynp0k" path="res://components/settings/settings_check.tscn" id="3_ll8ay"]
+[ext_resource type="PackedScene" uid="uid://biimbg7as7vn4" path="res://components/settings/settings_input.tscn" id="4_kbnjn"]
 
 [node name="Settings" type="Control" unique_id=1897571648]
 layout_mode = 3
@@ -60,6 +61,9 @@ property = "voice_vol"
 layout_mode = 2
 text = "Notifications"
 property = "notifications"
+
+[node name="NameInput" parent="Panel/MarginContainer/VBoxContainer" unique_id=106771582 instance=ExtResource("4_kbnjn")]
+layout_mode = 2
 
 [node name="Spacer" type="Control" parent="Panel/MarginContainer/VBoxContainer" unique_id=1667069321]
 layout_mode = 2

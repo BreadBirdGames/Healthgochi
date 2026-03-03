@@ -2,11 +2,13 @@ extends Node
 
 const SAVE_PATH := "user://save.tres"
 
+# NEED to be property _changed, otherwise our settings break
 signal master_vol_changed(value: float)
 signal sfx_vol_changed(value: float)
 signal voice_vol_changed(value: float)
 signal music_vol_changed(value: float)
 signal notifications_changed(value: bool)
+signal gochi_name_changed(value: String)
 
 var save_game: Save
 
@@ -31,6 +33,7 @@ func load_default_values() -> void:
 	music_vol = 100
 	voice_vol = 100
 	notifications = true
+	gochi_name = "Healthelly"
 
 
 func update_volumes() -> void:
@@ -94,3 +97,13 @@ var notifications: bool:
 		
 		save_game.notifications = value
 		notifications_changed.emit(value)
+
+var gochi_name: String:
+	get:
+		return save_game.gochi_name
+	set(value):
+		if save_game.gochi_name == value:
+			return
+		
+		save_game.gochi_name = value
+		gochi_name_changed.emit(value)

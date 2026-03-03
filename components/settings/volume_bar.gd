@@ -19,4 +19,4 @@ func update_level(_value: float) -> void:
 	slider.value = _value
 
 func _on_h_slider_value_changed(value: float) -> void:
-	SettingsStore.set(property, slider.value)
+	SettingsStore.set(property, value)

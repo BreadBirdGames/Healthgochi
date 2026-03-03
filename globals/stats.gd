@@ -4,6 +4,7 @@ signal food_changed(value: float)
 signal water_changed(value: float)
 signal sleep_changed(value: float)
 signal hp_changed(value: int)
+signal died()
 
 var _food: float
 var _water: float
@@ -16,9 +17,12 @@ var hp: int:
 	set(value):
 		if _hp == value:
 			return
-		
+
 		_hp = value
 		hp_changed.emit(value)
+
+		if value < 0:
+			died.emit()
 
 
 var food: float:

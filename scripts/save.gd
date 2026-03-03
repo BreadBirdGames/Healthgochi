@@ -6,3 +6,4 @@ class_name Save extends Resource
 @export var music_vol: float
 
 @export var notifications: bool
+@export var gochi_name: String

@@ -1,4 +1,4 @@
-extends CheckBox
+class_name SettingsCheck extends CheckBox
 
 @export var property: String
 
