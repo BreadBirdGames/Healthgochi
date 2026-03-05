@@ -26,4 +26,5 @@ func _on_save_button_pressed() -> void:
 	SettingsStore.save()
 	var file = FileAccess.open(SETUP_FILE_PATH, FileAccess.WRITE)
 	file.store_string("")
+	
 	PageManager.goto_page(PageManager.default_page)

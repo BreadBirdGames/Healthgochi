@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://5fyvqbaa6u75"]
 
 [ext_resource type="Script" uid="uid://jpt6yhi6llsh" path="res://pages/home/home.gd" id="1_ejprr"]
+[ext_resource type="Texture2D" uid="uid://cusiscirbsseh" path="res://assets/icons/gear.svg" id="3_f32ej"]
 [ext_resource type="PackedScene" uid="uid://dy00w63p5a1cu" path="res://pages/home/components/topbar.tscn" id="3_v2gta"]
 [ext_resource type="Texture2D" uid="uid://1gb3r0agepb5" path="res://assets/textures/creature.png" id="4_4e318"]
+[ext_resource type="Texture2D" uid="uid://c7qemqs2j0yct" path="res://assets/icons/info.svg" id="4_j3mil"]
 [ext_resource type="PackedScene" uid="uid://biau2mh4whm22" path="res://pages/home/components/stat_bar.tscn" id="5_2ouud"]
 [ext_resource type="Texture2D" uid="uid://dd2e3egduncg" path="res://assets/icons/bed.svg" id="5_ejprr"]
 [ext_resource type="Texture2D" uid="uid://bt27qknt6gy6w" path="res://assets/icons/food.svg" id="5_xbe33"]
@@ -37,19 +39,24 @@ theme_override_constants/margin_right = 5
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/MarginContainer" unique_id=1772089868]
 layout_mode = 2
 
-[node name="SettingsButton" type="Button" parent="VBoxContainer/MarginContainer/HBoxContainer" unique_id=109189678]
+[node name="SettingsButton" type="TextureButton" parent="VBoxContainer/MarginContainer/HBoxContainer" unique_id=562298584]
 layout_mode = 2
-theme_override_font_sizes/font_size = 24
-text = "Settings"
+texture_normal = ExtResource("3_f32ej")
+texture_pressed = ExtResource("3_f32ej")
+texture_hover = ExtResource("3_f32ej")
+texture_disabled = ExtResource("3_f32ej")
+stretch_mode = 0
 
 [node name="Spacer" type="Control" parent="VBoxContainer/MarginContainer/HBoxContainer" unique_id=2040649547]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="TipsButton" type="Button" parent="VBoxContainer/MarginContainer/HBoxContainer" unique_id=1067160297]
+[node name="TipsButton" type="TextureButton" parent="VBoxContainer/MarginContainer/HBoxContainer" unique_id=1307923484]
 layout_mode = 2
-theme_override_font_sizes/font_size = 24
-text = "Tips"
+texture_normal = ExtResource("4_j3mil")
+texture_pressed = ExtResource("4_j3mil")
+texture_hover = ExtResource("4_j3mil")
+texture_disabled = ExtResource("4_j3mil")
 
 [node name="TextureRect" type="TextureRect" parent="VBoxContainer" unique_id=716396902]
 layout_mode = 2
