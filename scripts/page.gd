@@ -13,6 +13,9 @@ enum Type {
 	
 	# Health
 	HEALTH_INDEX,
+	HEALTH_WATER,
+	HEALTH_SLEEP,
+	HEALTH_FOOD,
 
 	# Physical
 	PHYSICAL_INDEX,

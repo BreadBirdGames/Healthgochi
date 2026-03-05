@@ -9,6 +9,9 @@
 [ext_resource type="PackedScene" uid="uid://c2h13fs0ms1pi" path="res://pages/mental/breathing/mental_breathing.tscn" id="6_272bh"]
 [ext_resource type="PackedScene" uid="uid://dqtpln88ax3ib" path="res://pages/physical/physical_index.tscn" id="7_5vw27"]
 [ext_resource type="PackedScene" uid="uid://bx2yjg21xihad" path="res://pages/health/health_index.tscn" id="7_kek77"]
+[ext_resource type="PackedScene" uid="uid://wfumm4hi0q2f" path="res://pages/health/water/health_water.tscn" id="9_kek77"]
+[ext_resource type="PackedScene" uid="uid://diimjay2c652c" path="res://pages/health/sleep/health_sleep.tscn" id="10_dg77c"]
+[ext_resource type="PackedScene" uid="uid://ddiajl5raqwxi" path="res://pages/health/food/health_food.tscn" id="11_ycdy4"]
 
 [node name="Main" type="Control" unique_id=967050731 node_paths=PackedStringArray("page_container")]
 layout_mode = 3
@@ -26,7 +29,10 @@ packed_pages = Dictionary[int, PackedScene]({
 4: ExtResource("5_lquwl"),
 5: ExtResource("6_272bh"),
 6: ExtResource("7_kek77"),
-7: ExtResource("7_5vw27")
+7: ExtResource("9_kek77"),
+8: ExtResource("10_dg77c"),
+9: ExtResource("11_ycdy4"),
+10: ExtResource("7_5vw27")
 })
 page_container = NodePath("PageContainer")
 
