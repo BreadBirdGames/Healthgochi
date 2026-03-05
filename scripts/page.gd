@@ -2,6 +2,8 @@ class_name Page extends Control
 
 enum Type {
 	HOME,
+
+	SETUP,
 	SETTINGS,
 	TIPS,
 

@@ -34,8 +34,11 @@ layout_mode = 2
 
 [node name="SettingsLabel" type="Label" parent="Panel/MarginContainer/VBoxContainer" unique_id=11859122]
 layout_mode = 2
-theme_override_font_sizes/font_size = 64
+theme_override_font_sizes/font_size = 48
 text = "Settings"
+
+[node name="HSeparator" type="HSeparator" parent="Panel/MarginContainer/VBoxContainer" unique_id=1986003972]
+layout_mode = 2
 
 [node name="MasterVolume" parent="Panel/MarginContainer/VBoxContainer" unique_id=395744294 instance=ExtResource("2_q5qkr")]
 layout_mode = 2
@@ -57,13 +60,18 @@ layout_mode = 2
 title = "Voice acting"
 property = "voice_vol"
 
-[node name="SettingsCheck" parent="Panel/MarginContainer/VBoxContainer" unique_id=1052444605 instance=ExtResource("3_ll8ay")]
+[node name="HSeparator2" type="HSeparator" parent="Panel/MarginContainer/VBoxContainer" unique_id=747141755]
+layout_mode = 2
+
+[node name="NotificationCheck" parent="Panel/MarginContainer/VBoxContainer" unique_id=1052444605 instance=ExtResource("3_ll8ay")]
 layout_mode = 2
 text = "Notifications"
 property = "notifications"
 
 [node name="NameInput" parent="Panel/MarginContainer/VBoxContainer" unique_id=106771582 instance=ExtResource("4_kbnjn")]
 layout_mode = 2
+title = "Gochi's name"
+property = "gochi_name"
 
 [node name="Spacer" type="Control" parent="Panel/MarginContainer/VBoxContainer" unique_id=1667069321]
 layout_mode = 2
@@ -71,12 +79,12 @@ size_flags_vertical = 3
 
 [node name="Restorebutton" type="Button" parent="Panel/MarginContainer/VBoxContainer" unique_id=21182514]
 layout_mode = 2
-theme_override_font_sizes/font_size = 48
-text = "Restore default settings"
+theme_override_font_sizes/font_size = 32
+text = "Restore defaults"
 
 [node name="SaveButton" type="Button" parent="Panel/MarginContainer/VBoxContainer" unique_id=1387481957]
 layout_mode = 2
-theme_override_font_sizes/font_size = 48
+theme_override_font_sizes/font_size = 32
 text = "Save"
 
 [connection signal="pressed" from="Panel/MarginContainer/VBoxContainer/Restorebutton" to="." method="_on_restorebutton_pressed"]

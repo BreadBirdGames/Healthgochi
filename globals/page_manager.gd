@@ -22,7 +22,6 @@ func set_values(_default_page: Page.Type, _packed_pages: Dictionary[Page.Type, P
 	default_page = _default_page
 	packed_pages = _packed_pages
 	page_container = _page_container
-	goto_page(default_page)
 
 func goto_page(_page_t: Page.Type) -> void:
 	var page := get_page(_page_t)

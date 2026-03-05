@@ -43,20 +43,20 @@ layout_mode = 2
 [node name="RepeateLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=400052352]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 0.5882353)
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 24
 text = "X/Y"
 horizontal_alignment = 1
 
 [node name="InstructLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=352949336]
 layout_mode = 2
-theme_override_font_sizes/font_size = 76
+theme_override_font_sizes/font_size = 40
 text = "INSTRUCTION"
 horizontal_alignment = 1
 
 [node name="TimeLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=833628239]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 0.5882353)
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 24
 text = "XX:XX"
 horizontal_alignment = 1
 

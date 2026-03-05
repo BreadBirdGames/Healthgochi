@@ -21,7 +21,7 @@ layout_mode = 2
 
 [node name="HPLabel" type="Label" parent="MarginContainer/HBoxContainer" unique_id=727791794]
 layout_mode = 2
-theme_override_font_sizes/font_size = 48
+theme_override_font_sizes/font_size = 24
 text = "HP: XX"
 
 [node name="Spacer" type="Control" parent="MarginContainer/HBoxContainer" unique_id=2544474]
@@ -29,6 +29,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 
 [node name="NameLabel" type="Label" parent="MarginContainer/HBoxContainer" unique_id=1739347829]
+clip_contents = true
 layout_mode = 2
-theme_override_font_sizes/font_size = 48
+theme_override_font_sizes/font_size = 24
 text = "Name: XXXXX"

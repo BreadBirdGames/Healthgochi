@@ -8,21 +8,24 @@ anchor_right = 1.0
 offset_bottom = 58.0
 grow_horizontal = 2
 script = ExtResource("1_qvafy")
-title = "Gohci's name"
-property = "gochi_name"
 edit = NodePath("MarginContainer/VBoxContainer/LineEdit")
 label = NodePath("MarginContainer/VBoxContainer/Label")
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=539598638]
 layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=197040636]
 layout_mode = 2
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer" unique_id=458643521]
 layout_mode = 2
+theme_override_font_sizes/font_size = 24
 
 [node name="LineEdit" type="LineEdit" parent="MarginContainer/VBoxContainer" unique_id=1759098810]
 layout_mode = 2
+theme_override_font_sizes/font_size = 24
 
 [connection signal="text_changed" from="MarginContainer/VBoxContainer/LineEdit" to="." method="_on_line_edit_text_changed"]

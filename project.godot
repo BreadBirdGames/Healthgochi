@@ -12,6 +12,7 @@ config_version=5
 
 config/name="Healthgochi"
 run/main_scene="uid://npwgpbxaud2i"
+config/quit_on_go_back=false
 config/features=PackedStringArray("4.6")
 run/low_processor_mode=true
 config/icon="res://icon.svg"
@@ -29,10 +30,10 @@ SettingsStore="*uid://dtp5tj2cjka03"
 
 [display]
 
-window/size/viewport_width=720
-window/size/viewport_height=1280
+window/size/viewport_width=360
+window/size/viewport_height=800
+window/stretch/mode="viewport"
 window/stretch/aspect="expand"
-window/stretch/scale_mode="integer"
 window/handheld/orientation=1
 
 [editor_plugins]
@@ -46,6 +47,10 @@ back={
 "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194305,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
 ]
 }
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
 
 [rendering]
 
